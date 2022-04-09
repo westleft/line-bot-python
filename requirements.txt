@@ -3,4 +3,3 @@ uvicorn
 line-bot-sdk
 python-dotenv
 requests
-json
