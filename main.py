@@ -1,5 +1,6 @@
 import os
 import re
+import json
 from fastapi import FastAPI, HTTPException
 from dotenv import load_dotenv
 from fastapi.params import Header
@@ -7,7 +8,8 @@ from starlette.requests import Request
 from models.message_request import MessageRequest
 from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
-from linebot.models import MessageEvent, TextMessage, LocationMessage
+from linebot.models import MessageEvent, TextMessage, FollowEvent
+from linebot.models import TextSendMessage, FlexSendMessage
 from skills import *
 from skills import skills
 
@@ -44,20 +46,11 @@ def handle_message(event):
     func = get_message(msg_request)
     line_bot_api.reply_message(event.reply_token, func)
 
-# @handler.add(event=MessageEvent, message=TextMessage)
-# def handle_message(event):
-#     print(event)
-#     msg_request = MessageRequest()
-#     msg_request.intent = event.message.text
-#     msg_request.message = event.message.text
-#     msg_request.user_id = event.source.user_id
-    
-#     func = get_message(msg_request)
-#     line_bot_api.reply_message(event.reply_token, func)
-
-# @handler.add(event=MessageEvent, message=LocationMessage)
-# def handle_message(event):
-#     print('location', event)
-#     print('-----')
-#     print(event.message.latitude)
-#     print(event.message.longitude)
+# 加入好友
+@handler.add(event=FollowEvent)
+def handle_message(event):
+    flex_message = FlexSendMessage(
+        alt_text='選單',
+        contents = json.load(open('./messages/card.json','r',encoding='utf-8'))
+    )
+    line_bot_api.reply_message(event.reply_token, flex_message)
