@@ -2,5 +2,5 @@ fastAPI
 uvicorn
 line-bot-sdk
 python-dotenv
-request
+requests
 json
