@@ -1,0 +1,201 @@
+{
+    "type": "bubble",
+    "size": "mega",
+    "header": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "台灣 | 新北市 | 2022-04-09",
+              "color": "#ffffff",
+              "size": "sm"
+            },
+            {
+              "type": "text",
+              "text": "多雲時晴",
+              "color": "#ffffff",
+              "size": "xl",
+              "flex": 4,
+              "weight": "bold",
+              "margin": "4px"
+            }
+          ]
+        }
+      ],
+      "paddingAll": "20px",
+      "backgroundColor": "#64A6B9",
+      "spacing": "md",
+      "height": "90px",
+      "paddingTop": "22px"
+    },
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "filler"
+                },
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [],
+                  "cornerRadius": "30px",
+                  "height": "12px",
+                  "width": "12px",
+                  "borderColor": "#8EBFCC",
+                  "borderWidth": "2px"
+                },
+                {
+                  "type": "filler"
+                }
+              ],
+              "flex": 0
+            },
+            {
+              "type": "text",
+              "text": "最高溫度 20%",
+              "gravity": "center",
+              "flex": 4,
+              "size": "sm",
+              "color": "#707070"
+            }
+          ],
+          "spacing": "lg",
+          "margin": "none"
+        },
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "filler"
+                },
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [],
+                  "cornerRadius": "30px",
+                  "height": "12px",
+                  "width": "12px",
+                  "borderColor": "#72AFC0",
+                  "borderWidth": "2px"
+                },
+                {
+                  "type": "filler"
+                }
+              ],
+              "flex": 0
+            },
+            {
+              "type": "text",
+              "text": "最低溫度 20%",
+              "gravity": "center",
+              "flex": 4,
+              "size": "sm",
+              "color": "#707070"
+            }
+          ],
+          "spacing": "lg",
+          "cornerRadius": "30px",
+          "margin": "md"
+        },
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "filler"
+                },
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [],
+                  "cornerRadius": "30px",
+                  "height": "12px",
+                  "width": "12px",
+                  "borderColor": "#64A7B9",
+                  "borderWidth": "2px"
+                },
+                {
+                  "type": "filler"
+                }
+              ],
+              "flex": 0
+            },
+            {
+              "type": "text",
+              "text": "降雨機率 20%",
+              "gravity": "center",
+              "flex": 4,
+              "size": "sm",
+              "color": "#707070"
+            }
+          ],
+          "spacing": "lg",
+          "cornerRadius": "30px",
+          "margin": "md"
+        },
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "filler"
+                },
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [],
+                  "cornerRadius": "30px",
+                  "height": "12px",
+                  "width": "12px",
+                  "borderColor": "#4C95A9",
+                  "borderWidth": "2px"
+                },
+                {
+                  "type": "filler"
+                }
+              ],
+              "flex": 0
+            },
+            {
+              "type": "text",
+              "text": "舒適度 舒適至悶熱",
+              "gravity": "center",
+              "flex": 4,
+              "size": "sm",
+              "color": "#707070"
+            }
+          ],
+          "spacing": "lg",
+          "cornerRadius": "30px",
+          "margin": "md"
+        }
+      ]
+    }
+  }

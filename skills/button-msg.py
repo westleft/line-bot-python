@@ -18,7 +18,7 @@ def get(message_request: MessageRequest):
                 LocationAction(label='請選擇地址')
             ]
         )
-)
+    )
     return [
         location
     ]
