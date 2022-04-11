@@ -7,7 +7,7 @@ from skills import add_skill
 @add_skill('查詢天氣')
 def get(message_request: MessageRequest):
     try :
-        cityArr = ["台北市", "新北市", "桃園市", "基隆市", "新竹市", "宜蘭縣", "花蓮縣", "高雄市", "苗栗縣", "臺中市", "臺南市"]
+        cityArr = ["臺北市", "新北市", "桃園市", "基隆市", "新竹市", "宜蘭縣", "花蓮縣", "高雄市", "苗栗縣", "臺中市", "臺南市"]
         citys = []
         for city in cityArr:
             citys.append(
@@ -15,7 +15,7 @@ def get(message_request: MessageRequest):
                     action=PostbackAction(
                         label=f'{city}',
                         # display_text=f'幫我查詢 {city} 天氣概況',
-                        data=f'{city}'
+                        data=f'天氣縣市 {city}'
                     )
                 )
             )
