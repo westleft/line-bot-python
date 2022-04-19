@@ -23,6 +23,16 @@ def get(message_request: MessageRequest):
         messageTemplete['hero']['url'] = item['photo']
         messageTemplete['body']['contents'][0]['text'] = item['name']
         messageTemplete['body']['contents'][1]['contents'][5]['text'] =  str(item['rating'])
+
+        for i in range(5):
+            print(f"第{i}")
+            if(i < item['rating']):
+                print(f"金色")
+                messageTemplete['body']['contents'][1]['contents'][i]['url'] = "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+            else:
+                print(f"灰色")
+                messageTemplete['body']['contents'][1]['contents'][i]['url'] = "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gray_star_28.png"
+
         # messageTemplete['footer']['contents'][0]['action']['uri'] = f"https://www.google.com/maps/place?q={item['name']}"
         data.append(messageTemplete)
 
@@ -38,6 +48,5 @@ def get(message_request: MessageRequest):
     )
 
     return [
-        TextSendMessage(text="查詢中，請稍後片刻..."),
         flex_message,
     ]
