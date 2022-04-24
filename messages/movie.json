@@ -1,0 +1,76 @@
+{
+  "type": "bubble",
+  "hero": {
+    "type": "image",
+    "size": "full",
+    "aspectRatio": "25:30",
+    "aspectMode": "cover",
+    "url": "https://movies.yahoo.com.tw/x/r/w420/i/o/production/movies/March2022/EtSCkm2QEUSaqBF9eETD-1080x1538.jpg"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "text",
+        "text": "逆者",
+        "wrap": false,
+        "weight": "bold",
+        "size": "xl",
+        "color": "#1D1A05",
+        "margin": "none"
+      },
+      {
+        "type": "box",
+        "layout": "baseline",
+        "contents": [
+          {
+            "type": "text",
+            "wrap": true,
+            "weight": "bold",
+            "size": "md",
+            "flex": 0,
+            "text": "上映日期： 2022-04-22",
+            "color": "#8C7E18",
+            "margin": "none"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "baseline",
+        "contents": [
+          {
+            "type": "text",
+            "text": "在金融業十多年的黃育仁，33歲時決定要離開他的舒適圈，從分析師轉職成為無固定...",
+            "wrap": true,
+            "weight": "bold",
+            "size": "sm",
+            "flex": 0,
+            "color": "#868385"
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "預告片",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "http://linecorp.com/"
+        },
+        "color": "#868385"
+      }
+    ],
+    "justifyContent": "center",
+    "alignItems": "center",
+    "backgroundColor": "#F8F3DD"
+  }
+}

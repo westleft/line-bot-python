@@ -25,7 +25,7 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "熱門電影榜",
+                    "text": "本周新電影",
                     "size": "xl",
                     "color": "#FFFFFF",
                     "weight": "bold"
@@ -38,7 +38,7 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "Yahoo 電影「台北票房榜」前 10 名",
+                    "text": "提供 Yahoo 電影的「本周新片」片單",
                     "color": "#ebebeb",
                     "size": "sm",
                     "flex": 0
@@ -62,7 +62,7 @@
                       },
                       {
                         "type": "text",
-                        "text": "查看排行榜",
+                        "text": "查看本周新片",
                         "color": "#ffffff",
                         "flex": 0,
                         "offsetTop": "-2px"
@@ -86,7 +86,7 @@
                 "action": {
                   "type": "message",
                   "label": "action",
-                  "text": "找美食"
+                  "text": "查看本周新片"
                 }
               }
             ],

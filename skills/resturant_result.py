@@ -5,6 +5,7 @@ from skills import add_skill
 from helpers.googlemap import GoogleMapSearch
 import googlemaps
 import json
+import urllib
 
 @add_skill('美食地圖')
 def get(message_request: MessageRequest):
@@ -25,15 +26,14 @@ def get(message_request: MessageRequest):
         messageTemplete['body']['contents'][1]['contents'][5]['text'] =  str(item['rating'])
 
         for i in range(5):
-            print(f"第{i}")
             if(i < item['rating']):
-                print(f"金色")
                 messageTemplete['body']['contents'][1]['contents'][i]['url'] = "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
             else:
-                print(f"灰色")
                 messageTemplete['body']['contents'][1]['contents'][i]['url'] = "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gray_star_28.png"
 
-        # messageTemplete['footer']['contents'][0]['action']['uri'] = f"https://www.google.com/maps/place?q={item['name']}"
+        # 網址帶中文會掛掉
+        resturantName = urllib.parse.quote(item['name'])
+        messageTemplete['footer']['contents'][0]['action']['uri'] = f"https://www.google.com/maps/place?q={resturantName}"
         data.append(messageTemplete)
 
         if(len(data) == 12):
